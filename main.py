@@ -11,7 +11,7 @@ API_HASH = os.environ["API_HASH"]
 BOT_TOKEN = os.environ["BOT_TOKEN"]
 
 app = Client(
-    "music_downloader_bot",
+    "MNBoT",
     api_id=API_ID,
     api_hash=API_HASH,
     bot_token=BOT_TOKEN,
@@ -35,7 +35,7 @@ async def start_web_server():
 
 if __name__ == "__main__":
     app.start()
-    print("Bot started! 🎶")
+    print("Bot started! this repo was created by mntgxo")
     # Optionally start the health-check server (remove if using Background Worker)
     loop = asyncio.get_event_loop()
     loop.run_until_complete(start_web_server())
